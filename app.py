@@ -11,8 +11,6 @@ import pathlib
 import webbrowser
 import os
 
-path_html = str(pathlib.Path(__file__).parent.absolute()) + "\index.html"
-
 INPUT_DEVICE_INDEX = 1
 FRAME_RATE = 32000
 RECORD_SECONDS = 3
@@ -82,6 +80,7 @@ transcribe = Thread(target=sr.transcribe)
 transcribe.start()
 print('\n Starting... \n')
 time.sleep(5)
+path_html = str(pathlib.Path(__file__).parent.absolute()) + "\index.html"
 webbrowser.open(path_html)
 
 if __name__ == "__main__":
