@@ -1,31 +1,24 @@
 # Real-time in-browser transcription
 
-## Installatio
+## Installation
 
-## Mac & Linux
+### Mac & Linux
 Requirements: git, python, make, portaudio (only mac), python3-pyaudio (only linux)
-<code>
-$ git clone https://github.com/Tancre/stt && cd stt
+<code>$ git clone https://github.com/Tancre/stt && cd stt
 $ make install-mac
 </code>
 
 ### Windows
 Requirements: git, python, make (install with chocolately)
-<code>
-$ git clone https://github.com/Tancre/stt; cd stt
-$ make install-windows
-</code>
+<code>$ git clone https://github.com/Tancre/stt; cd stt 
+$ make install-windows</code>
 
 ## Setup: Find and set input device index
-<code>
-$ make find-device
-</code>
+<code>$ make find-device</code>
 - Open app.py and change input device index number on line 16
 
 ## Run 
-<code>
-$ make
-</code>
+<code>$ make</code>
 
 ## Settings
 - framerate
@@ -36,7 +29,7 @@ $ make
 - check browser's console to understand if the connection was succeful
 - check output app.py for errors
 
-### WINDOWS DEBUG
+### Windows
 
 - error: running scripts is disabled on this system
 1. First, Open PowerShell with Run as Administrator.
