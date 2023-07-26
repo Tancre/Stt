@@ -3,21 +3,29 @@
 ## Installatio
 
 ## Mac & Linux
-- requirements: git, python, make, portaudio (only mac), python3-pyaudio (only linux)
+Requirements: git, python, make, portaudio (only mac), python3-pyaudio (only linux)
+<code>
 $ git clone https://github.com/Tancre/stt && cd stt
 $ make install-mac
+</code>
 
 ### Windows
-- requirements: git, python, make (install with chocolately)
+Requirements: git, python, make (install with chocolately)
+<code>
 $ git clone https://github.com/Tancre/stt; cd stt
 $ make install-windows
+</code>
 
 ## Setup: Find and set input device index
+<code>
 $ make find-device
-open app.py and change input device index on line 16
+</code>
+- Open app.py and change input device index number on line 16
 
 ## Run 
+<code>
 $ make
+</code>
 
 ## Settings
 - framerate
