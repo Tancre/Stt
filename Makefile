@@ -1,6 +1,7 @@
 default: server
 
 find-device:
+	./.venv/Scripts/activate
 	python.exe find_input_device_index.py
 
 install-windows:
@@ -15,4 +16,4 @@ server:
 	./.venv/Scripts/activate
 	python.exe app.py
 
-.PHONY: install server activate
+.PHONY: install-mac install-windows server find-device
