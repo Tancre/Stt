@@ -66,7 +66,7 @@ async def show_transcription(websocket):
     while True:
         message = transcription[-1]
         await websocket.send(message)
-        await asyncio.sleep(5)
+        await asyncio.sleep(RECORD_SECONDS)
 
 async def main():
     async with websockets.serve(show_transcription, "localhost", 5678):
@@ -78,7 +78,7 @@ record.start()
 time.sleep(2)
 transcribe = Thread(target=sr.transcribe)
 transcribe.start()
-print('\n Starting... \n')
+print('\n Listening... \n')
 time.sleep(5)
 path_html = str(pathlib.Path(__file__).parent.absolute()) + "\index.html"
 webbrowser.open(path_html)
