@@ -6,5 +6,5 @@ p = pyaudio.PyAudio()
 for i in range(p.get_device_count()):
     print("[" + p.get_device_info_by_index(i)["index"] + "]", p.get_device_info_by_index(i)["name"])
 
-time.sleep(500)
+time.sleep(60000)
 p.terminate()
